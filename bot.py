@@ -80,9 +80,9 @@ def signin():
     time.sleep(1.25)
     driver.find_element_by_xpath('//*[@id="root"]/div/header/div/div[2]/div[2]/div/div[1]/a').click()  # Click "log in"
     time.sleep(0.75)
-    driver.find_element_by_xpath('//*[@id="username"]').send_keys("# put your usename here")
+    driver.find_element_by_xpath('//*[@id="username"]').send_keys("# put your usename here"jacob66)
     time.sleep(0.75)
-    driver.find_element_by_xpath('//*[@id="password"]').send_keys("# put your password here")
+    driver.find_element_by_xpath('//*[@id="password"]').send_keys("# put your password here 05Drow8039")
     time.sleep(0.75)
     driver.find_element_by_xpath('//*[@id="root"]/div/div/main/div/section/div/div[2]/div/form/button').click()
     time.sleep(0.75)
@@ -159,7 +159,7 @@ while True:
             cont_keyboard.press(Key.enter)
         elif char == '*':
             cont_keyboard.type(random.choice(string.ascii_lowercase))
-            deviation = random.randint(-10, 10)
+            deviation = random.randint(-1000000, 1000000)
             get_time = get_sleep_time(target_wpm, deviation)
         else:
             cont_keyboard.type(char)
